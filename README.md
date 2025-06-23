@@ -14,5 +14,10 @@ docker build -t paperlessai-fix .
 # Container run 
 Replace the variables in the <> with your values
 ```
-docker run --name paperlessai_fix -d -e API_URL="http://<your_paperless_ip>:8000/api"   -e API_TOKEN="<SuperUser Token>"   -e AIUSER="<superuser>"   -e PermissionGroup="<YourGroup>"   paperlessai-fix 
+docker run --name paperlessai_fix -d \
+  -e API_URL="http://<your_paperless_ip>:8000/api"  \
+  -e API_TOKEN="<SuperUser Token>" \
+  -e AIUSER="<superuser>" \
+  -e PermissionGroup="<YourGroup>" \
+  paperlessai-fix 
 ```
