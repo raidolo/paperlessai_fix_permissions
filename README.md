@@ -3,6 +3,12 @@ A little docker container to fix the tags permissions made by paperless-ai and a
 The original script has been made by @WernerWhite here https://github.com/clusterzx/paperless-ai/discussions/326#discussioncomment-12365575
 I've improved the number of items retrieved as per my comment here: https://github.com/clusterzx/paperless-ai/discussions/326#discussioncomment-13552500
 
+# Prebuilt image
+
+The docker image build from the Dockerfile can be found here: https://hub.docker.com/r/raidolo/paperlessai-fix
+
+If you want to build the container yourself follow these instructions: 
+
 # Container Build 
 
 ```
