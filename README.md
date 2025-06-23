@@ -5,10 +5,14 @@ I've improved the number of items retrieved as per my comment here: https://gith
 
 # Container Build 
 
+```
 git clone https://github.com/raidolo/paperlessai_fix_permissions.git
 cd paperlessai_fix_permissions
 docker build -t paperlessai-fix .
+```
 
 # Container run 
 Replace the variables in the <> with your values
+```
 docker run --name paperlessai_fix -d -e API_URL="http://<your_paperless_ip>:8000/api"   -e API_TOKEN="<SuperUser Token>"   -e AIUSER="<superuser>"   -e PermissionGroup="<YourGroup>"   paperlessai-fix 
+```
