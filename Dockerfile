@@ -14,7 +14,7 @@ RUN chmod +x /paperlessai_fix_perm.sh;  chmod +x /start.sh
 
 
 # Add the cron job to execute the script every minute
-RUN (crontab -l ; echo "* * * * * /paperlessai_fix_perm.sh > /paperlessai_fix.log 2>&1") | crontab -
+RUN (crontab -l ; echo "* * * * * /paperlessai_fix_perm.sh >> /proc/1/fd/1 2>&1") | crontab -
 
 # Start cron in the foreground
 CMD /start.sh
