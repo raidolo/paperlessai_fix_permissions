@@ -7,9 +7,22 @@ I've improved the number of items retrieved as per my comment here: https://gith
 
 The docker image build from the Dockerfile can be found here: https://hub.docker.com/r/raidolo/paperlessai-fix
 
-If you want to build the container yourself follow these instructions: 
+then run the container with this command:
+
+Replace the variables in the <> with your values
+```
+docker run --name paperlessai_fix -d \
+  -e API_URL="http://<your_paperless_ip>:8000/api"  \
+  -e API_TOKEN="<SuperUser Token>" \
+  -e AIUSER="<superuser>" \
+  -e PermissionGroup="<YourGroup>" \
+  raidolo/paperlessai-fix 
+```
+
+
 
 # Container Build 
+If you want to build the container yourself follow these instructions: 
 
 ```
 git clone https://github.com/raidolo/paperlessai_fix_permissions.git
