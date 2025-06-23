@@ -21,3 +21,9 @@ docker run --name paperlessai_fix -d \
   -e PermissionGroup="<YourGroup>" \
   paperlessai-fix 
 ```
+
+# Debug
+You can check the log of the script simply running the docker logs output (wait the first run first!)
+```
+docker logs paperlessai_fix
+```
